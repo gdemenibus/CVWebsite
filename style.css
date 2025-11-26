@@ -1,5 +1,5 @@
 :root {
-  --violet: #8f00ff;
+  --violet: #b36d43;
 }
 
 @font-face {
@@ -79,7 +79,6 @@ section.first {
 .socials > ul {
   columns: 2;
 }
-
 /*
 *
 header > h1 {
