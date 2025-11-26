@@ -1,0 +1,179 @@
+:root {
+  --violet: #8f00ff;
+}
+
+@font-face {
+  font-family: "Major Mono Display";
+  src: url(./fonts/MajorMonoDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: "MPLUS Code";
+  src: url(./fonts/MPLUSCodeLatin-Regular.ttf);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  padding-top: 0.4em;
+}
+
+body {
+  margin: 0;
+  font-family: "MPLUS Code", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
+  background-color: black;
+}
+
+h1,
+h2 {
+  color: var(--violet);
+  font-family: "Major Mono Display", monospace;
+}
+
+h3 {
+  color: var(--violet);
+}
+
+h1 {
+  font-size: min(1vw, 8rem);
+}
+
+a:link,
+a:visited {
+  color: inherit;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main > * {
+  width: min(80vw, 50rem);
+}
+
+section.first {
+  margin-top: 2em;
+}
+
+.socials {
+  width: min(20rem, 100%);
+}
+.socials > ul {
+  columns: 2;
+}
+
+/*
+*
+header > h1 {
+  color: var(--violet);
+}
+
+header > h1::before {
+  content: "0x76";
+}
+
+header > h1:hover::before {
+  content: "v";
+}
+*/
+
+#q1, #q2, #q3, #q4 {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 0; left: 0;
+  z-index: 10;       /* Keep them above background but below title */
+}
+
+#q2 { left: 50%; }
+#q3 { top: 50%; }
+#q4 { top: 50%; left: 50%; }
+header > h1::before {
+  content:
+"                                       \A "
+"    ▄▄▄▄   ▄▄▄▄▄▄    ▄▄    ▄▄    ▄▄▄▄  \A "
+"  ██▀▀▀▀█  ██▀▀▀▀██  ██    ██  ▄█▀▀▀▀█ \A "
+" ██        ██    ██  ██    ██  ██▄     \A "
+" ██  ▄▄▄▄  ███████   ██    ██   ▀████▄ \A "
+" ██  ▀▀██  ██    ██  ██    ██       ▀██\A "
+"  ██▄▄▄██  ██▄▄▄▄██  ▀██▄▄██▀  █▄▄▄▄▄█▀\A "
+"    ▀▀▀▀   ▀▀▀▀▀▀▀     ▀▀▀▀     ▀▀▀▀▀  \A "
+"                                       \A ";
+  white-space: pre;
+}
+
+/* HOVER STATES */
+
+#q1:hover ~ header > h1::before {
+  content: 
+" ██████\\  ███████\\  ██\\   ██\\  ██████\\  \A"
+"██  __██\\ ██  __██\\ ██ |  ██ |██  __██\\ \A"
+"██ /  \\__|██ |  ██ |██ |  ██ |██ /  \\__|\A"
+"██ |████\\ ███████\\ |██ |  ██ |\\██████\\  \A"
+"██ |\\_██ |██  __██\\ ██ |  ██ | \\____██\\ \A"
+"██ |  ██ |██ |  ██ |██ |  ██ |██\\   ██ |\A"
+"\\██████  |███████  |\\██████  |\\██████  |\A"
+" \\______/ \\_______/  \\______/  \\______/ \A";
+                                        
+                                        
+                                        
+
+}
+#q2:hover ~ header > h1::before {
+  content: 
+"  /██████  /███████  /██   /██  /██████  \A"
+" /██__  ██| ██__  ██| ██  | ██ /██__  ██ \A"
+"| ██  \\__/| ██  \\ ██| ██  | ██| ██  \\__/ \A"
+"| ██ /████| ███████ | ██  | ██|  ██████  \A"
+"| ██|_  ██| ██__  ██| ██  | ██ \\____  ██ \A"
+"| ██  \\ ██| ██  \\ ██| ██  | ██ /██  \\ ██ \A"
+"|  ██████/| ███████/|  ██████/|  ██████/ \A"
+" \\______/ |_______/  \\______/  \\______/  \A";
+                                        
+  white-space: pre;
+                                        
+                                        
+}
+#q3:hover ~ header > h1::before {
+  content: 
+"  ______   _______   __    __   ______  \A"
+" /      \\ /       \\ /  |  /  | /      \\ \A"
+"/██████  |███████  |██ |  ██ |/██████  |\A"
+"██ | _██/ ██ |__██ |██ |  ██ |██ \\__██/ \A"
+"██ |/    |██    ██< ██ |  ██ |██      \\ \A"
+"██ |████ |███████  |██ |  ██ | ██████  |\A"
+"██ \\__██ |██ |__██ |██ \\__██ |/  \\__██ |\A"
+"██    ██/ ██    ██/ ██    ██/ ██    ██/ \A"
+" ██████/  ███████/   ██████/   ██████/  \A";
+}
+#q4:hover ~ header > h1::before {
+  content:
+"  ______   _______   __    __   ______ \A"
+" /      \\ |       \\ |  \\  |  \\ /      \\\A"
+"|  ██████\\| ███████\\| ██  | ██|  ██████\\\A"
+"| ██ __\\██| ██__/ ██| ██  | ██| ██___\\██\A"
+"| ██|    \\| ██    ██| ██  | ██ \\██    \\\A"
+"| ██ \\████| ███████\\| ██  | ██ _\\██████\\\A"
+"| ██__| ██| ██__/ ██| ██__/ ██|  \\__| ██\A"
+" \\██    ██| ██    ██ \\██    ██ \\██    ██\A"
+"  \\██████  \\███████   \\██████   \\██████\A";
+}
+█
