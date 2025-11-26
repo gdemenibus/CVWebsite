@@ -6,6 +6,7 @@
   --background: #222222;
   --green: #5f875f;
   --cyan: #c9a554;
+  --white: #d7c483;
 
 }
 
@@ -193,7 +194,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  color: whitesmoke;
+  color: white;
   background-color: var(--background);
 }
 
