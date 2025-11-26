@@ -1,6 +1,186 @@
+/* 
+*https://github.com/xero/miasma.nvim/blob/main/extras/miasma.yml
+* */
 :root {
   --orange: #b36d43;
   --background: #222222
+}
+
+.resume-section {
+margin: 2em 0;
+text-align: left;
+  animation: reveal 4s steps(40) forwards,
+             cursor .8s step-end infinite;
+}
+
+.resume-section h2 {
+border-bottom: 2px solid var(--orange);
+padding-bottom: 0.3em;
+margin-bottom: 1em;
+}
+
+.experience-item,
+.education-item,
+.project-item {
+margin-bottom: 1.5em;
+padding-left: 1em;
+border-left: 3px solid var(--orange);
+}
+
+.job-title,
+.degree-title,
+.project-title {
+color: var(--orange);
+font-weight: bold;
+font-size: 1.1em;
+}
+
+.organization,
+.institution {
+color: #cccccc;
+font-style: italic;
+}
+
+.date-range {
+color: #999999;
+font-size: 0.9em;
+float: right;
+}
+
+.skills-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 1em;
+margin-top: 1em;
+}
+
+.skill-category {
+background-color: #1a1a1a;
+padding: 1em;
+border-radius: 5px;
+border: 1px solid var(--orange);
+}
+
+.skill-category h4 {
+color: var(--orange);
+margin: 0 0 0.5em 0;
+font-size: 1em;
+}
+
+.skill-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.skill-list li {
+padding: 0.2em 0;
+color: #cccccc;
+}
+
+.contact-info {
+text-align: center;
+margin-bottom: 2em;
+padding: 1em;
+background-color: #1a1a1a;
+border-radius: 5px;
+border: 1px solid var(--orange);
+}
+
+.contact-info a {
+color: var(--orange);
+text-decoration: none;
+margin: 0 1em;
+}
+
+.contact-info a:hover {
+text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+.date-range {
+  float: none;
+  display: block;
+  margin-top: 0.3em;
+}
+
+.contact-info a {
+  display: block;
+  margin: 0.3em 0;
+}
+}
+
+@media print {
+@page {
+  margin: 0.75in;
+  size: A4;
+}
+
+.date-range,
+.organization,
+.institution,
+.skill-list li {
+  color: black !important;
+}
+
+body {
+  font-size: 11pt;
+  line-height: 1.3;
+  color: black !important;
+  background: white !important;
+}
+
+main {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24pt;
+  page-break-after: avoid;
+}
+
+h2 {
+  font-size: 14pt;
+  page-break-after: avoid;
+  margin-top: 1em;
+}
+
+.contact-info,
+.skill-category {
+  background-color: transparent !important;
+  border: 1px solid #333 !important;
+}
+
+.resume-section h2 {
+  border-bottom: 2px solid #333 !important;
+}
+
+.experience-item,
+.education-item,
+.project-item {
+  border-left: 3px solid #333 !important;
+  page-break-inside: avoid;
+}
+
+a {
+  color: #333 !important;
+  text-decoration: underline;
+}
+
+.skills-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+}
+
+.resume-section {
+  page-break-inside: avoid;
+}
+
+.date-range {
+  float: right;
+}
 }
 
 @font-face {
@@ -63,6 +243,16 @@ main {
   flex-direction: column;
 }
 
+@keyframes reveal {
+  from { width: 0; }
+  to { width: 66%; }
+}
+
+/* blinking cursor effect */
+@keyframes cursor {
+  50% { border-color: var(--orange); }
+}
+
 main > * {
   width: min(80vw, 50rem);
 }
@@ -77,33 +267,6 @@ section.first {
 .socials > ul {
   columns: 2;
 }
-/*
-*
-header > h1 {
-  color: var(--orange);
-}
-
-header > h1::before {
-  content: "0x76";
-}
-
-header > h1:hover::before {
-  content: "v";
-}
-*/
-
-#q1, #q2, #q3, #q4 {
-  position: fixed;
-  width: 50%;
-  height: 50%;
-  top: 0; left: 0;
-  z-index: 10;       /* Keep them above background but below title */
-  pointer-events: none;
-}
-
-#q2 { left: 50%; }
-#q3 { top: 50%; }
-#q4 { top: 50%; left: 50%; }
 header > h1::before {
   content:
 "                                       \A "
