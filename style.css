@@ -1,16 +1,14 @@
 :root {
-  --violet: #b36d43;
+  --orange: #b36d43;
+  --background: #222222
 }
 
 @font-face {
-  font-family: "Major Mono Display";
-  src: url(./fonts/MajorMonoDisplay-Regular.ttf);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: italic;
 }
 
-@font-face {
-  font-family: "MPLUS Code";
-  src: url(./fonts/MPLUSCodeLatin-Regular.ttf);
-}
 
 html,
 body {
@@ -28,21 +26,21 @@ li {
 
 body {
   margin: 0;
-  font-family: "MPLUS Code", monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: whitesmoke;
-  background-color: black;
+  background-color: var(--background);
 }
 
 h1,
 h2 {
-  color: var(--violet);
-  font-family: "Major Mono Display", monospace;
+  color: var(--orange);
+  font-family: "IBM Plex Mono", monospace;
 }
 
 h3 {
-  color: var(--violet);
+  color: var(--orange);
 }
 
 h1 {
@@ -82,7 +80,7 @@ section.first {
 /*
 *
 header > h1 {
-  color: var(--violet);
+  color: var(--orange);
 }
 
 header > h1::before {
