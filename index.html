@@ -44,16 +44,13 @@
           <p>
             <ul>
               <li>
-
-                Extended test suite and documentation for 4 legacy services.
-
+                Extended test suite and documentation for 4 legacy services, bringing line coverage up from 80% to 85%.
               </li>
               <li>
-                Responsible for renaming multiple features to avoid semantic overloading .
+                Responsible for renaming 3 features to avoid semantic overloading.
               </li>
-
               <li>
-                Provided technical feedback on two services that change the trajectory of desing (Project still on going)
+                Provided technical feedback on two services that changed the trajectory of design (Project still ongoing)
               </li>
             </ul>
           </p>
@@ -68,13 +65,13 @@
             Interned with the Public Sector Solutions Architect Team in Spain.
             <ul>
               <li>
-                Got commendation for helping team prep for calls with customers using new technologies. 
+                Received commendation for helping team prep for calls with customers using new technologies. 
               </li>
               <li>
-                Got Cloud Practitionor certificate.
+                Passed the Cloud Practitionor certificate.
               </li>
               <li>
-                Developed and deployed microservice demo for reference for customers on AWS using fargate and the aws cdk.
+                Developed and deployed microservice demo for reference for customers on AWS using Fargate and the AWS CDK.
               </li>
             </ul>
           </p>
@@ -87,8 +84,10 @@
           </div>
           <div class="date-range">2024</div>
           <p>
-            Head Teacing Assistant (TA) for Software Systems and Embedded Systems Lab, 200+ students
-            Responsible for managing TA  team, 5 total, as well as grading, problems between students and running office hours for projects.
+            Head Teacing Assistant (TA) for Software Systems and Embedded Systems Lab, courses with over 200 students.
+            Managed a team of 5 TAs and graded 5 assignments per student over the course of 3 months. 
+            In charge of running the office hours, providing guidance on the assignments. 
+            Acted as the last step in escalation for student team issues (Missing assignments, plagiarism, team conflict)
           </p>
           <ul>
             <li>
@@ -97,7 +96,7 @@
               programming in Rust
             </li>
             <li>
-              <strong>Embedded Systems Lab:</strong>Mentored a hands-on capstone
+              <strong>Embedded Systems Lab:</strong> Mentored a hands-on capstone
               course where students are tasked to write the control software for
               a quadcopter from scratch
             </li>
@@ -110,8 +109,8 @@
           <div class="project-title">Software Engineer</div>
           <div class="organization">VideowindoW, TU Delft</div>
           <div class="date-range">2021</div>
-          Developed Generative Art in Rust and OpenGL to show off client technology (See through Video screens that acted as
-          glare control). Art needed low latency and efficiency, deployed on embedded system.
+          Developed Generative Art in Rust and OpenGL to show off client technology (See through video screens that acted as
+          glare control). Art needed to run on a small embedded edge nodes alongside pipeline to drive the displays, requiring lightweight and power-efficient code. 
           <p>
             <ul>
               <li>
@@ -124,7 +123,7 @@
                 Lead meetings showing off weekly demos to stakeholders
               </li>
               <li>
-                Designed the wind effect on the generative trees
+                Developed a wind effect for the generative trees art piece
               </li>
             </ul>
             CEO and CFO considered the project a success. They used the art as part of the marketing and displayed it at Vivatech 2021.
@@ -156,10 +155,10 @@
           <div class="institution">TU Delft</div>
           <div class="date-range">2019 - 2023</div>
           <p>
-            Big data track, with a specialization in algorithmics. 
+            Big data track, with a specialization in algorithms. 
           </p>
           <p>
-            <strong>Notable Coursework</strong> Functional Programming: Wrote a version of the popular jq tool in haskell to parse and interact with JSON files.
+            <strong>Notable Coursework</strong> Functional Programming: Wrote a version of the popular jq tool in Haskell to parse and interact with JSON files. Scored a 8.5/10 on the assignment.
           </p>
         </div>
 
@@ -175,13 +174,13 @@
 
         <div class="project-item">
           <div class="project-title">
-            Masters's Thesis: The Three Flatland Problem 
+            Masters Thesis: The Three Flatland Problem 
           </div>
           <div class="organization">TU Delft</div>
           <div class="date-range">2025</div>
           <p>
             Investigated an alternative way to generate content for Augmented reality that supports proper focus cues for 2D content. 
-            Developed tailore made raytracer + factorizer in Rust and WGPU, including efficient buffer mapping for CPU-GPU communication.
+            Developed a bespoke raytracer + factorizer in Rust and WGPU, including efficient buffer mapping for CPU-GPU communication.
             Method was 30% faster than state of the art, as well as 100x faster in sampling times. 
           </p>
           <p>
@@ -193,7 +192,7 @@
             <a href="https://github.com/gdemenibus/pinholeTest">GitHub</a>
           </p>
           <p>
-            Video of me presenting the thesis to  <a href="https://www.youtube.com/live/6TUtI7KX0fA">VISGRAF</a>
+            Video of me presenting the thesis to the research group  <a href="https://www.youtube.com/live/6TUtI7KX0fA">VISGRAF</a> at IMPA (Instituto Nacional de Matemática Pura e Aplicada)
           </p>
         </div>
 
@@ -204,18 +203,22 @@
           <div class="organization">TU Delft</div>
           <div class="date-range">2023</div>
           <p>
-             Developed an embedded control unit for a tethered quaddrupel drone, housing a ARM Cortex M0 CPU. No floating point unit present. Drone used onboard sensors to feed the control algorithm. 
+             Developed an embedded control unit for a tethered quaddrupel drone, housing a ARM Cortex M0 CPU and no floating point unit. Drone used onboard sensors to feed the control algorithm. 
             Developed a UART Protocol for communication as well as a PC interface for sending commands to the drone and reading the joystick.
             Achieved:
             <ul>
               <li>
-                150 Hz control loop
+                Control algorithm worked in fixed point, with conversions to floating point to perform FP-hacks for square root and power operatinos.
+              </li>
+              <li>
+                150 Hz control loop.
               </li>
               <li>
                 Robust communication protocol with crc.
               </li>
               <li>
                 Full TUI for pilot, incloding dashboards for angles, motor values and current state.
+                Concurrent controls for handling joystick, mouse and UI inputs.
               </li>
             </ul>
           </p>
@@ -228,9 +231,9 @@
           </div>
           <div class="date-range">2023</div>
           <p>
-            Competed and won in a hackathon for Lely, an agricultural automation company. Hackathon centered on finding uses for all their data. 
-            Combined different data streams to predict milk quality. 
-            Won thanks to a focus on actionalble information for the end user (farmers).
+            Competed and won in a hackathon for Lely, an agricultural automation company.
+            Combined 4 different data stresm to create a milk health dashboard and give farmers a general view of their heard's health by comparing it to other heards in the database.
+            Jury chose my solution based on its focus on the end customer (farmers) and providing a service no competitor offered.
           </p>
         </div>
 
@@ -265,7 +268,8 @@
         <h2>Profile</h2>
         <ul>
           <li>
-            <strong>In Love with tooling</strong> Always interested in finding ways to reduce paint points and feel fast. Tools are what empower us to make a change.
+            <strong>In Love with tooling</strong> Linux, rust and 
+            Always interested in finding ways to reduce paint points and feel fast. Tools are what empower us to make a change.
           </li>
           <li>
             <strong>Endless Curiosity</strong> Reading and learning is one of life's great pleasures. I'm always looking to expnad my horizon, from technical blog breakdowns to long history books.
@@ -279,7 +283,7 @@
       <section class="resume-section">
         <h2>Additional Information</h2>
         <p><strong>Languages:</strong> Native English, Native French, Native Spanish, B2 Portuguese, A1 German</p>
-        <p><strong>Interests:</strong> Board Games, Reading,</p>
+        <p><strong>Interests:</strong> Board Games, Literature,</p>
       </section>
     </main>
   
