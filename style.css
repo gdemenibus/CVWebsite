@@ -77,6 +77,15 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 gap: 1em;
 margin-top: 1em;
 }
+.skill-category:hover h4 {
+color: var(--green);
+
+}
+
+.skill-category:hover {
+border: 1px solid var(--green);
+
+}
 
 
 .skill-category {
